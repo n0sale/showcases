@@ -35,8 +35,15 @@
         </Style>
     </Window.Resources>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
         <ToggleButton Style="{StaticResource ToggleButtonStyle1}">
-            <TextBlock>Test</TextBlock>
+            This is working
+        </ToggleButton>
+        <ToggleButton Grid.Row="1" Style="{StaticResource ToggleButtonStyle1}">
+            <TextBlock>This is not</TextBlock>
         </ToggleButton>
     </Grid>
 </Window>
